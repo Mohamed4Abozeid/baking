@@ -1,0 +1,359 @@
+/* Genral style */
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya", serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #795548;
+}
+
+.clr {
+  clear: both;
+}
+.coantainer {
+  width: 90%;
+  margin: auto;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+/* nav style */
+nav {
+  padding: 3px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  font-size: 20px;
+}
+nav .coantainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 200px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+ul li {
+  padding: 0 15px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  transition: color 0.5s;
+}
+.nav-scrol ul li a {
+  color: var(--main-color);
+}
+ul li a:hover {
+  color: var(--main-color);
+}
+
+/* hero section */
+
+.hero {
+  width: 100%;
+  height: 120vh;
+  background-image: url("../images/drew-coffman-1872.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 1.5rem 0;
+}
+
+.hero button {
+  border-radius: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+.btn1 {
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+  color: #fff;
+}
+.btn1:hover,
+.btn2:hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+.btn2 {
+  background-color: transparent;
+  color: var(--main-color);
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.loading {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  border-radius: 24px;
+  border: 2px solid #fff;
+}
+.loading span a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+.scrol-nav {
+  color: var(--main-color);
+  background-color: white;
+}
+#light {
+  display: none;
+}
+
+/* about section */
+#about,
+#location {
+  padding: 50px 20px;
+}
+
+.float-left {
+  float: left;
+  width: 50%;
+}
+
+.float-left img,
+.float-right img {
+  width: 90%;
+}
+
+.float-right {
+  float: right;
+  width: 50%;
+}
+
+.icon,
+.icons {
+  display: flex;
+  align-items: center;
+}
+.icon .icon-img img,
+.icons .icon img {
+  width: 44px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: none;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+}
+
+.float-right h3,
+.float-left h3 {
+  font-size: 1.7rem;
+  margin: 1.8rem 0;
+}
+.float-right p,
+.float-left p {
+  line-height: 2rem;
+  margin: 10px 0;
+}
+
+.float-right .all-icon,
+.float-left .all-icon {
+  margin-top: 2rem;
+}
+.float-right .all-icon .icon,
+.float-left .all-icon .icon {
+  margin-top: 20px;
+}
+
+.nav-togle {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+  float: right;
+  position: relative;
+}
+
+.nav-togle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.nav-scrol .nav-togle span {
+  background-color: black;
+}
+
+/* location */
+#location {
+  background-color: #f1f1f1;
+}
+
+/* our Baking */
+
+#our-baking {
+  padding: 1rem 0;
+}
+.baking-info {
+  text-align: center;
+  width: 100%;
+}
+.baking-info h3 {
+  font-size: 1.7rem;
+  margin: 1.8rem 0;
+}
+.baking-info p {
+  margin: 1.8rem 0;
+}
+
+.card .card-img img {
+  width: 100%;
+}
+.card-inner {
+  float: left;
+  width: 33.33%;
+  padding: 13px;
+}
+.card-info {
+  text-align: center;
+}
+.card h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+/* contact */
+#contact {
+  padding: 50px 0;
+  background-color: #f1f1f1;
+}
+
+#contact .float-left .all-icon .icon span img {
+  background-color: var(--main-color);
+}
+iframe {
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 38vh;
+  background-color: #353330;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+}
+footer .coantainer img {
+  width: 25%;
+}
+
+.btn-top {
+  display: none;
+  width: 35px;
+  height: 20px;
+  border-radius: 100%;
+  position: fixed;
+  top: 85%;
+  left: 90%;
+  background-color: gray;
+  cursor: pointer;
+}
+.btn-top img {
+  width: 100%;
+}
+
+.icons {
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.icons .icon img {
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.icons .icon img:hover {
+  background-color: var(--main-color);
+}
+
+/* Final */
+.final {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #403d38;
+  color: #969696;
+  line-height: 30px;
+}
+.final .coantainer {
+  background-image: url(../images/contact-details-map.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.box {
+  float: left;
+  width: 25%;
+  padding-right: 15px;
+}
+.box h4 {
+  color: #fff;
+  padding-bottom: 24px;
+  font-size: 20px;
+}
+.box ul li {
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #696969;
+}
+
+.box ul li:last-child {
+  border: none;
+}
+.box ul li i {
+  display: inline-block;
+  margin-right: 5px;
+}
+.box ul li p {
+  display: inline-block;
+}
+
+#btn-click {
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+/* Small */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .float-left,
+  .float-right,
+  .float-left img,.float-right img {
+    width: 100%;
+  }
+  #about,#location
+  {
+    padding: 30px 1rem;
+  }
+  .box{width: 100%;}
+
+
+  .card-inner
+  {
+    width: 100%;
+  }
+ 
+}
+
+
+
+/* larg */
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+  nav .links {
+    display: none;
+  }
+  nav .nav-togle {
+    display: block;
+  }
+}
